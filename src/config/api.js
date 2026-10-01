@@ -1,5 +1,5 @@
 // API configuration for different environments
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://food-delivery-app-c4kw.onrender.com';
 
 export const API_ENDPOINTS = {
   BASE_URL: API_BASE_URL,

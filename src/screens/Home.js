@@ -15,7 +15,7 @@ export default function Home() {
   const [showSuggestions, setShowSuggestions] = useState(false);
 
   const loadData = async ()=> {
-    let response = await fetch("http://localhost:5000/api/foodData", {
+    let response = await fetch("https://food-delivery-app-c4kw.onrender.com/api/foodData", {
       method: "POST",
       headers: {
         'Content-Type' : 'application/json'
@@ -33,7 +33,7 @@ export default function Home() {
 
   const searchFood = async (term) => {
     try {
-      const response = await fetch("http://localhost:5000/api/searchFood", {
+      const response = await fetch("http://food-delivery-app-c4kw.onrender.com/api/searchFood", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'
@@ -59,7 +59,7 @@ export default function Home() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/searchSuggestions", {
+      const response = await fetch("http://food-delivery-app-c4kw.onrender.com/api/searchSuggestions", {
         method: "POST",
         headers: {
           'Content-Type': 'application/json'

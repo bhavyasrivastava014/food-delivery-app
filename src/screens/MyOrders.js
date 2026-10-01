@@ -22,7 +22,7 @@ export default function MyOrders() {
 
         setLoading(true);
         try {
-            const response = await fetch("http://localhost:5000/api/myorders", {
+            const response = await fetch("http://food-delivery-app-c4kw.onrender.com/api/myorders", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
