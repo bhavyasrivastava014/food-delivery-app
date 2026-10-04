@@ -63,7 +63,7 @@ app.use(compression());
 const allowedOrigins = [
   'http://localhost:3000',
   'http://localhost:3001',
-  'https://your-gofood-app.vercel.app', // Replace with your actual Vercel domain
+  'https://food-delivery-app-12.vercel.app',
   process.env.FRONTEND_URL,
   ...(process.env.ADDITIONAL_ORIGINS ? process.env.ADDITIONAL_ORIGINS.split(',') : [])
 ].filter(Boolean);
